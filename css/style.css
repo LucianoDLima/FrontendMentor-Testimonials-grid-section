@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Screen reader only, for accessibility when needed */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Base */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed";
+  background-color: hsl(210deg, 46%, 95%);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* Utility background color*/
+.card--bg-color-1 {
+  background-color: hsl(263deg, 55%, 52%);
+}
+
+.card--bg-color-2 {
+  background-color: hsl(217deg, 19%, 35%);
+}
+
+.card--bg-color-3 {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.card--bg-color-4 {
+  background-color: hsl(219deg, 29%, 14%);
+}
+
+/* Utility border color*/
+.card--border-color-1 {
+  outline: 2px solid hsl(263deg, 55%, 52%);
+}
+
+.card--border-color-2 {
+  outline: 2px solid hsl(265deg, 68%, 69%);
+}
+
+.card--border-color-3 {
+  outline: 2px solid hsl(217deg, 19%, 35%);
+}
+
+.card--border-color-4 {
+  outline: 2px solid hsl(216deg, 19%, 31%);
+}
+
+.card--border-color-5 {
+  outline: 2px solid hsl(210deg, 46%, 95%);
+}
+
+.card--border-color-6 {
+  outline: 2px solid hsl(219deg, 29%, 14%);
+}
+
+/* Utility font color*/
+.card--font-color-light {
+  color: hsl(0deg, 0%, 81%);
+}
+
+.card--font-color-dark {
+  color: hsl(219deg, 29%, 14%);
+}
+
+/* Utility quotation background*/
+.card--quotation {
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 10.4%;
+}
+@media only screen and (min-width: 750px) {
+  .card--quotation {
+    background-position: top right 25%;
+  }
+}
+
+/* Utility grid areas*/
+@media only screen and (min-width: 750px) {
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+
+  .grid-col-span-3 {
+    grid-column: span 2;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+
+  .grid-col-span-3 {
+    grid-column: unset;
+  }
+
+  .grid-row-1-3 {
+    grid-row: 1/3;
+  }
+
+  .grid-right {
+    grid-column-start: 4;
+  }
+}
+main {
+  max-width: 1157px;
+  margin-inline: auto;
+  display: grid;
+  gap: 2.4rem;
+  padding-inline: 2.4rem;
+  padding-block: 6.1rem;
+}
+@media only screen and (min-width: 1150px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    padding: unset;
+  }
+}
+
+.card {
+  border-radius: 0.8rem;
+  padding: 2.5rem 3.2rem 3.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0.5rem 0.5rem 2rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+.card__profile {
+  display: flex;
+}
+.card__profile__picture {
+  max-width: 28px;
+  margin-right: 1.7rem;
+}
+.card__profile__picture img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card__profile__name-verified {
+  line-height: 1.3;
+}
+.card__profile__name-verified .card__profile__verified {
+  font-size: 1.1rem;
+  opacity: 0.5;
+}
+.card__info h2 {
+  font-size: 2.01rem;
+  margin-bottom: 1.65rem;
+}
+.card__info p {
+  line-height: 1.4;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */

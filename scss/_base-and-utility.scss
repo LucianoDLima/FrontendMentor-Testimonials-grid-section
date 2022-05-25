@@ -1,0 +1,100 @@
+@use 'variables' as *;
+/* Base */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+ font-size: $fs-main;
+ font-family: $fm-main;
+ background-color: $light-grayish-blue;
+ min-height: 100vh;
+ display: grid;
+ place-items: center;
+}
+
+/* Utility background color*/
+.card--bg-color-1 {
+    background-color: $moderate-violet;
+}
+.card--bg-color-2 {
+    background-color: $very-dark-grayish-blue;
+}
+.card--bg-color-3 {
+    background-color: $white;
+}
+.card--bg-color-4 {
+    background-color: $very-dark-blackish-blue;
+}
+
+/* Utility border color*/
+
+.card--border-color-1 {
+    outline: $outline-pp $moderate-violet;
+}
+.card--border-color-2 {
+    outline: $outline-pp $moderate-light-violet;
+}
+.card--border-color-3 {
+    outline: $outline-pp $very-dark-grayish-blue;
+}
+.card--border-color-4 {
+    outline: $outline-pp $very-dark-grayish-blue-2;
+}
+.card--border-color-5 {
+    outline: $outline-pp $light-grayish-blue;
+}
+.card--border-color-6 {
+    outline: $outline-pp $very-dark-blackish-blue;
+}
+
+/* Utility font color*/
+.card--font-color-light {
+    color: $light-gray;
+}
+
+.card--font-color-dark {
+    color: $very-dark-blackish-blue;
+}
+
+/* Utility quotation background*/
+.card--quotation {
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10.4%;
+
+    @include mq-tablet {
+        background-position: top right 25%;
+    }
+}
+
+/* Utility grid areas*/
+
+@include mq-tablet {
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+
+    .grid-col-span-3 {
+        grid-column: span 2;
+    }
+}
+
+@include mq-laptop {
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+
+    .grid-col-span-3 {
+        grid-column: unset;
+    }
+    
+    .grid-row-1-3 {
+        grid-row: 1/3;
+    }
+    
+    .grid-right {
+        grid-column-start: 4;
+    }
+}
