@@ -10,4 +10,4 @@ Thanks for checking out this front-end coding challenge.
 
 [Live Site](https://lucianodlima.github.io/FrontendMentor-Testimonials-grid-section/)
 
-[Solution]()
+[Solution](https://www.frontendmentor.io/solutions/responsive-testimonials-grid-sass-mobile-first-eFM_mGVLBu)
